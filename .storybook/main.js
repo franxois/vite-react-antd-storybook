@@ -1,11 +1,11 @@
 const myConfig = require("../shared-vite-config");
 
 module.exports = {
-  async viteFinal(config, { configType }) {
+  async viteFinal(config) {
     // customize the Vite config here
 
     config.css = myConfig.css;
-    config.plugins = [...config.plugins, ...myConfig.plugins];
+    config.plugins.push(...myConfig.plugins);
 
     // return the customized config
     return config;
