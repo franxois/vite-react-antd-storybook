@@ -1,4 +1,4 @@
-const myConfig = require("../shared-vite-config");
+const myConfig = require("../shared-vite-config.js");
 
 module.exports = {
   async viteFinal(config) {

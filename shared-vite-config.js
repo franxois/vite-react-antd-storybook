@@ -1,5 +1,7 @@
 const styleImport = require("vite-plugin-style-import");
 
+// Storybook already has reactRefresh, cannot share
+
 module.exports = {
   css: {
     preprocessorOptions: {

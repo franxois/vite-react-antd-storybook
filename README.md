@@ -1,5 +1,7 @@
 Empty project using React, Antd, Vite.js & Storybook.js
 
+Unit test run in Cypress component testing
+
 # Commands used
 
     npm init @vitejs/app
@@ -7,6 +9,7 @@ Empty project using React, Antd, Vite.js & Storybook.js
 
     npm i antd
     npm i vite-plugin-style-import less -D
+    npm i cypress @cypress/react @cypress/vite-dev-server -D
 
 # How I customize Antd Theme
 
@@ -14,9 +17,9 @@ I'm used to this approach : https://ant.design/docs/react/customize-theme#Custom
 
 However, modifying theme in modifyVars avoid to import all default Antd css styles. This result a much smaller css file in production bundle
 
-# Shared config between Vite and Storybook
+# Shared config between Vite, Storybook and Cypress CT
 
-`./shared-vite-config.js` centralizes custom configuration used by the React App and Storybook. This ensures to use the same Antd's theme values between vite dev server and Storybook
+`./shared-vite-config.js` centralizes custom configuration used by the React App, Storybook and Cypress CT. This ensures to use the same Antd's theme values between vite dev server, Storybook and Cypress
 
 # Build
 
