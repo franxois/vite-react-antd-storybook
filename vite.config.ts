@@ -1,9 +1,9 @@
 import { defineConfig, UserConfig } from "vite";
-import reactRefresh from "@vitejs/plugin-react-refresh";
+import react from "@vitejs/plugin-react";
 import myConfig from "./shared-vite-config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh(), ...myConfig.plugins],
+  plugins: [react(), ...myConfig.plugins],
   css: myConfig.css,
 }) as UserConfig;
